@@ -20,12 +20,6 @@ body .estadisticas ul li {
   font-size: 32px;
 }
 
-@media (max-width: 500px) {
-  body .estadisticas ul li {
-    font-size: 18px;
-  }
-}
-
 body .estadisticas .verde {
   color: #45be0c;
 }
@@ -85,6 +79,13 @@ body h1 :visited {
   }
   body h1 {
     margin-top: 131px;
+  }
+}
+
+@media (max-width: 514px) {
+  body h1 {
+    margin-top: 131px;
+    visibility: hidden;
   }
 }
 
