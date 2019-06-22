@@ -1,0 +1,123 @@
+body {
+
+    background-color: black;
+
+    .estadisticas {
+        position: absolute;
+        color: wheat;
+        font-family: 'Amatic SC', cursive;
+
+
+        ul {
+
+            list-style: none;
+            left: -13px;
+
+            li {
+                border-bottom: 2px dashed orangered;
+                letter-spacing: 2px;
+                margin-left: 0;
+                font-size: 32px;
+
+            }
+
+        }
+
+        @media (max-width:500px) {
+
+            ul li {
+                font-size: 18px;
+            }
+        }
+
+
+
+
+
+        .verde {
+            color: rgb(69, 190, 12);
+
+
+        }
+
+        .rojo {
+            color: rgb(247, 57, 51);
+
+
+        }
+
+        .amarillo {
+            color: rgb(212, 224, 38);
+
+
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .elecciones {
+            display: flex;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -53%);
+            -webkit-transform: translate(-50%, -48%);
+
+            width: 70%;
+
+            img {
+
+                width: 70%;
+                max-width: 480px;
+            }
+        }
+
+
+
+    }
+    
+    .texto {
+        font-family: 'Amatic SC', cursive;
+        font-size: 74px;
+        letter-spacing: 4px;
+        color: wheat;
+
+    }
+
+    h1 {
+        margin-top: -11px;
+
+        :visited{
+            color: white;
+        }
+
+
+    }
+
+    @media (max-width:814px) {
+        .texto {
+
+            font-size: 48px;
+        }
+
+        h1 {
+            margin-top: 131px;
+        }
+    }
+
+    .roca:hover {
+        transform: scale(1.1);
+    }
+    
+    .papel:hover {
+        transform: scale(1.1);
+    }
+    
+    .tijeras:hover {
+        transform: scale(1.1);
+    }
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="estadisticas">
+      <ul>
+        <li>Yo elijo:<span id="computadora" class="rojo"> El amor</span></li>
+        <li>Ganadas:<span id="ganadas" class="verde"> 0</span></li>
+        <li>Perdidas:<span id="perdidas" class="rojo"> 0</span></li>
+        <li>Empates:<span id="empate" class="amarillo"> 0</span></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1><span id="mensaje" class="texto">Elige tu opcion </h1>
+      <div class="elecciones">
+        <div onclick="opcion(this)" class="roca" id="roca">
+          <img src="./imagenes/rock.jpg" alt="" />
+        </div>
+        <div onclick="opcion(this)" class="papel" id="papel">
+          <img src="./imagenes/paper.jpg" alt="" />
+        </div>
+        <div onclick="opcion(this)" class="tijeras" id="tijeras">
+          <img src="./imagenes/scissors.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
