@@ -78,14 +78,13 @@ body h1 :visited {
     font-size: 48px;
   }
   body h1 {
-    margin-top: 131px;
+    margin-top: 551px;
   }
 }
 
 @media (max-width: 514px) {
   body h1 {
-    margin-top: 131px;
-    visibility: hidden;
+    margin-top: 551px;
   }
 }
 
