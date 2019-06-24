@@ -5,7 +5,19 @@ let perdidas = 0;
 let empate = 0;
 
 
+function click() {
+    let mensaje = document.getElementById('mensaje');
+    mensaje.addEventListener('click', () => {
+        mensaje.innerHTML = "Has reseteado";
+        ganadas = 0;
+        perdidas = 0;
+        empate = 0;
+        perdidas = 0;
+    });
+  
 
+
+}
 
 function estadisticas() {
 
@@ -19,11 +31,12 @@ function estadisticas() {
 }
 
 function opcion(elemento) {
+    click();
     ComputadoraOpcion();
     QuienGano(computadoraEleccion, elemento.id);
     estadisticas()
 
-   
+
 }
 
 
@@ -46,19 +59,19 @@ function QuienGano(computadora, jugador) {
 
     if (computadora === jugador) {
         empate++
-        return mensaje.innerHTML = "Empate con: "+jugador
+        return mensaje.innerHTML = "Empate con: " + jugador
     } else if (jugador == 'roca' && computadora == 'tijeras') {
         ganadas++
-        return mensaje.innerHTML = "Ganaste con: "+"ROCA";
+        return mensaje.innerHTML = "Ganaste con: " + "ROCA";
     } else if (jugador == 'papel' && computadora == 'roca') {
         ganadas++
-        return mensaje.innerHTML = "Ganaste con: "+"PAPEL";
-    } else if (jugador == 'tijera' && computadora == 'papel') {
+        return mensaje.innerHTML = "Ganaste con: " + "PAPEL";
+    } else if (jugador == 'tijeras' && computadora == 'papel') {
         ganadas++
-        return mensaje.innerHTML = "Ganaste con: "+"TIJERAS";
+        return mensaje.innerHTML = "Ganaste con: " + "TIJERAS";
     } else {
         perdidas++
-        return mensaje.innerHTML = "Perdiste con: "+jugador;
+        return mensaje.innerHTML = "Perdiste con: " + jugador;
     }
 
 }
