@@ -1,4 +1,5 @@
 let computadoraEleccion;
+let usuarioEleccion;
 let mensaje = document.getElementById('mensaje');
 let ganadas = 0;
 let perdidas = 0;
@@ -19,6 +20,22 @@ function click() {
 
 }
 
+
+function click2() {
+    let container = document.getElementById('container');
+    container.addEventListener('click', (e) => {
+       
+       usuarioEleccion = e.toElement.id;
+       console.lo
+    });
+  
+
+
+}
+
+
+
+
 function estadisticas() {
 
     document.getElementById('ganadas').innerHTML = `${ganadas}`;
@@ -32,6 +49,7 @@ function estadisticas() {
 
 function opcion(elemento) {
     click();
+    click2();
     ComputadoraOpcion();
     QuienGano(computadoraEleccion, elemento.id);
     estadisticas()

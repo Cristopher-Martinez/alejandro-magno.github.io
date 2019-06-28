@@ -13,7 +13,7 @@
     />
   </head>
 
-  <body>
+  <body onload="opcion()">
     <div class="estadisticas">
       <ul>
         <li>Yo elijo:<span id="computadora" class="rojo"> El amor</span></li>
@@ -23,17 +23,17 @@
       </ul>
     </div>
 
-    <div class="container">
-      <h1><span id="mensaje" class="texto">Elige tu opcion </h1>
+    <div id="container" class="container">
+      <h1 ><span  id="mensaje" class="texto">Elige tu opcion </h1>
       <div class="elecciones">
-        <div onclick="opcion(this)" class="roca" id="roca">
-          <img src="./imagenes/rock.jpg" alt="" />
+        <div  class="roca">
+          <img  id="roca" src="./imagenes/rock.jpg" alt="" />
         </div>
-        <div onclick="opcion(this)" class="papel" id="papel">
-          <img src="./imagenes/paper.jpg" alt="" />
+        <div class="papel">
+          <img  id="papel" a src="./imagenes/paper.jpg" alt="" />
         </div>
-        <div onclick="opcion(this)" class="tijeras" id="tijeras">
-          <img src="./imagenes/scissors.jpg" alt="" />
+        <div  class="tijeras">
+          <img  id="tijeras" src="./imagenes/scissors.jpg" alt="" />
         </div>
       </div>
     </div>
