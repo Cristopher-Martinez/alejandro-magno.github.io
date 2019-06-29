@@ -6,19 +6,6 @@ let perdidas = 0;
 let empate = 0;
 
 
-function click() {
-    let mensaje = document.getElementById('mensaje');
-    mensaje.addEventListener('click', () => {
-        mensaje.innerHTML = "Has reseteado";
-        ganadas = 0;
-        perdidas = 0;
-        empate = 0;
-        perdidas = 0;
-    });
-  
-
-
-}
 
 
 function click2() {
@@ -56,6 +43,10 @@ document.getElementById('mensaje').addEventListener('click',()=>{
     document.getElementById('perdidas').innerHTML = 0;
     document.getElementById('empate').innerHTML =  0;
     document.getElementById('computadora').innerHTML = 'Zzzz';
+    ganadas = 0;
+        perdidas = 0;
+        empate = 0;
+        perdidas = 0;
 
 })
 }
