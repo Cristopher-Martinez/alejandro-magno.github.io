@@ -18,7 +18,20 @@ function estadisticas() {
 
 }
 
+
+function opcion2(){
+  
+document.getElementById('mensaje').addEventListener('click',()=>{
+    document.getElementById('mensaje').innerHTML = "Has reiniciado";
+    document.getElementById('ganadas').innerHTML = 0;
+    document.getElementById('perdidas').innerHTML = 0;
+    document.getElementById('empate').innerHTML =  0;
+    document.getElementById('computadora').innerHTML = 'Zzzz';
+
+})
+}
 function opcion(elemento) {
+    opcion2();
     ComputadoraOpcion();
     QuienGano(computadoraEleccion, elemento.id);
     estadisticas()

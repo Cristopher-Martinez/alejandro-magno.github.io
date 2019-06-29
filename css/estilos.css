@@ -103,4 +103,8 @@ body .tijeras:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+h1 {
+  cursor: pointer;
+}
 /*# sourceMappingURL=estilos.css.map */
