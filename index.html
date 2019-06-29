@@ -13,27 +13,27 @@
     />
   </head>
 
-  <body onload="opcion()">
+  <body>
     <div class="estadisticas">
       <ul>
-        <li>Yo elijo:<span id="computadora" class="rojo"> El amor</span></li>
+        <li>Computadora:<span id="computadora" class="rojo"> Zzzz</span></li>
         <li>Victorias:<span id="ganadas" class="verde"> 0</span></li>
         <li>Derrotas:<span id="perdidas" class="rojo"> 0</span></li>
         <li>Empates:<span id="empate" class="amarillo"> 0</span></li>
       </ul>
     </div>
 
-    <div id="container" class="container">
-      <h1 ><span  id="mensaje" class="texto">Elige tu opcion </h1>
+    <div class="container">
+      <h1><span id="mensaje" class="texto">Elige tu opcion </h1>
       <div class="elecciones">
-        <div  class="roca">
-          <img  id="roca" src="./imagenes/rock.jpg" alt="" />
+        <div onclick="opcion(this)" class="roca" id="roca">
+          <img src="./imagenes/rock.jpg" alt="" />
         </div>
-        <div class="papel">
-          <img  id="papel" a src="./imagenes/paper.jpg" alt="" />
+        <div onclick="opcion(this)" class="papel" id="papel">
+          <img src="./imagenes/paper.jpg" alt="" />
         </div>
-        <div  class="tijeras">
-          <img  id="tijeras" src="./imagenes/scissors.jpg" alt="" />
+        <div onclick="opcion(this)" class="tijeras" id="tijeras">
+          <img src="./imagenes/scissors.jpg" alt="" />
         </div>
       </div>
     </div>

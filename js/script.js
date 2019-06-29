@@ -47,9 +47,20 @@ function estadisticas() {
 
 }
 
+
+function opcion2(){
+  
+document.getElementById('mensaje').addEventListener('click',()=>{
+    document.getElementById('mensaje').innerHTML = "Has reiniciado";
+    document.getElementById('ganadas').innerHTML = 0;
+    document.getElementById('perdidas').innerHTML = 0;
+    document.getElementById('empate').innerHTML =  0;
+    document.getElementById('computadora').innerHTML = 'Zzzz';
+
+})
+}
 function opcion(elemento) {
-    click();
-    click2();
+    opcion2();
     ComputadoraOpcion();
     QuienGano(computadoraEleccion, elemento.id);
     estadisticas()
@@ -83,7 +94,7 @@ function QuienGano(computadora, jugador) {
         return mensaje.innerHTML = "Ganaste con: " + "ROCA";
     } else if (jugador == 'papel' && computadora == 'roca') {
         ganadas++
-        return mensaje.innerHTML = "Ganaste con: " + "PAPEL";
+        return mensaje.innerHTML = "Ganaste con: "+"PAPEL";
     } else if (jugador == 'tijeras' && computadora == 'papel') {
         ganadas++
         return mensaje.innerHTML = "Ganaste con: " + "TIJERAS";
