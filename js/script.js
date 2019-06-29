@@ -53,7 +53,7 @@ function QuienGano(computadora, jugador) {
     } else if (jugador == 'papel' && computadora == 'roca') {
         ganadas++
         return mensaje.innerHTML = "Ganaste con: "+"PAPEL";
-    } else if (jugador == 'tijera' && computadora == 'papel') {
+    } else if (jugador == 'tijeras' && computadora == 'papel') {
         ganadas++
         return mensaje.innerHTML = "Ganaste con: "+"TIJERAS";
     } else {
