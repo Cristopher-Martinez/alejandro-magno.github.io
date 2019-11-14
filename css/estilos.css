@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+}
+
+body .estadisticas {
+  position: absolute;
+  color: wheat;
+  font-family: 'Amatic SC', cursive;
+}
+
+body .estadisticas ul {
+  list-style: none;
+  left: -13px;
+}
+
+body .estadisticas ul li {
+  border-bottom: 2px dashed orangered;
+  letter-spacing: 2px;
+  margin-left: 0;
+  font-size: 32px;
+}
+
+body .estadisticas .verde {
+  color: #45be0c;
+}
+
+body .estadisticas .rojo {
+  color: #f73933;
+}
+
+body .estadisticas .amarillo {
+  color: #d4e026;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .elecciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -53%);
+  -webkit-transform: translate(-50%, -48%);
+  width: 50%;
+}
+
+body .container .elecciones img {
+  width: 80%;
+  max-width: 480px;
+}
+
+body .texto {
+  font-family: 'Amatic SC', cursive;
+  font-size: 74px;
+  letter-spacing: 4px;
+  color: wheat;
+}
+
+body h1 {
+  margin-top: -11px;
+}
+
+body h1 :visited {
+  color: white;
+}
+
+@media (max-width: 814px) {
+  body .texto {
+    font-size: 48px;
+  }
+  body h1 {
+    margin-top: 551px;
+  }
+}
+
+body .roca:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .papel:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .tijeras:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+h1 {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=estilos.css.map */
